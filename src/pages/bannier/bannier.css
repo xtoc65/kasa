@@ -1,0 +1,32 @@
+.image
+{
+    border-radius: 30px;
+    object-fit: cover;
+    position: absolute;
+}
+
+.background
+{
+    position: absolute;
+    object-fit: cover;
+    background: #000000;
+    mix-blend-mode: darken;
+    opacity: 0.3;
+    border-radius: 30px;
+    height: 224px;
+}
+
+.banniere
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 70px;
+    color: white;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 68px;
+}

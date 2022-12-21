@@ -1,0 +1,36 @@
+.header
+{
+    display: flex;
+    align-items: center;
+    margin: 25px auto;
+    max-width: 1240px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.App-logo
+{
+    width: 210px;
+}
+
+.navbar
+{
+    width: 185px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar_link
+{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    color: #FF6060;
+    text-decoration: none;
+}
+
+.navbar_link:hover
+{
+    text-decoration: underline;
+}
