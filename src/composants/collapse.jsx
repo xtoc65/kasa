@@ -1,5 +1,6 @@
 import { useState } from "react";
 import {FaAngleDown, FaAngleUp} from "react-icons/fa";
+import './collapse.css';;
 
 const Collapse = (props) => {
     const [ouvert, setOuvert] = useState(false);
@@ -9,7 +10,7 @@ const Collapse = (props) => {
             <div onClick={()=>setOuvert(!ouvert)}>
                 {props.label}
             
-                {ouvert? (<span><FaAngleUp/></span>): (<span><FaAngleDown/></span>) }
+                {ouvert? (<span className='faAngle'><FaAngleUp/></span>): (<span className='faAngle'><FaAngleDown/></span>) }
             </div>
            
         </div>

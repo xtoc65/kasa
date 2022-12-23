@@ -5,9 +5,9 @@ import './apropos.css';
 const Apropos = () => {
     return (
       <>
-        <img src={apropos} alt="images" className=""/>
-          
-        <div className="label">
+        <img src={apropos} alt="images" className="imgpropos"/>
+        <div className="accordeon">
+          <div className="label">
           <Collapse label="Fiabilité" >
               <p className="drop">Les annonces postées sur Kasa garantissent une fiabilité totale. 
                 Les photos sont conformes aux logements, et toutes les informations 
@@ -41,6 +41,8 @@ const Apropos = () => {
                 ateliers sur la sécurité domestique pour nos hôtes.</p>
           </Collapse>
         </div>
+        </div> 
+        
 
       </>      
     );
