@@ -57,6 +57,17 @@
     text-align: center;
 }
 
+.rouge
+{
+    color: #FF6060;
+}
+
+.gris
+{
+    color: #E3E3E3;
+    ;
+}
+
 .information
 {
     display: flex;
@@ -76,7 +87,7 @@
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 25px;
-    
+    border-radius: 16px;
 }
 
 .description
@@ -91,17 +102,24 @@
     padding: 10px 0 0 10px;
 }
 
+.equipement
+{    
+    display: flex;
+    margin: 10px 0 0 0;
+    flex-direction: column;   
+    background: #F7F7F7;
+    border-radius: 15px;    
+    padding: 10px 0 0 10px;
+    height: 249px;
+}
+
 .description_equipement
 {
     font-family: 'Montserrat';
     color: #FF6060;
-    background: #F7F7F7;
-    border-radius: 10px;
-    height: 249px;
-    width: min-content;
+    height: 25px;
     width: 572px;
-    margin: 10px 0 0 0;
-    padding: 10px 0 0 10px;
+    margin: 0;
 }
 
 

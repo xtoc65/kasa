@@ -4,13 +4,14 @@ import LogementsContext from "../../context/logements-context";
 import Carrousel from "../../composants/carrousel/carousel";
 import Collapse from "../../composants/collapse/collapse";
 import "./logement.css"
-// import {FaStar} from "react-icons/fa";
+import {FaStar} from "react-icons/fa";
 
 
 const Logement = () => {
   const logements = useContext(LogementsContext);
   const {id} = useParams();
   const logement = logements.find(lgt =>lgt.id === id); 
+  const etoiles = [1,2,3,4,5];
     return (   
       <>
         <Carrousel pictures = {logement.pictures}/>
@@ -30,14 +31,16 @@ const Logement = () => {
             )
           } 
         </div>  
-        {/* <div>
-          {logement.rating.map((rating , index) =>
+        <div>
+          {etoiles.map((rating) =>
               (
-                <p key={index}>{rating}<FaStar/></p>
+                
+                <FaStar key={rating} className={logement.rating >= rating? "rouge": "gris"}/>
+                
               )
             )
           }
-        </div> */}
+        </div>
         <div className="information">
           <div className="info">
             <Collapse label="Description">
@@ -47,7 +50,14 @@ const Logement = () => {
         
           <div className="info">
             <Collapse label="Equipement">
-              <p className="description_equipement">{logement.equipments}</p>
+              <div className="equipement">
+                {logement.equipments.map((equipement, index) =>
+                    (
+                      <p className="description_equipement" key={index}>{equipement}</p>
+                    )
+                  )
+                }
+              </div>
             </Collapse>  
           </div>
         </div>
