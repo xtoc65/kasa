@@ -7,7 +7,7 @@ const Bannier = () => {
         <>   
             <img src={banniere } alt="logo kasa" className='image'/>
             <div className='background'>            
-                <img src={background} />
+                <img src={background} alt="logo kasa" className='img_background'/>
             </div>                     
             <p className='banniere'>Chez vous, partout et ailleurs</p>
         </>

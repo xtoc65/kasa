@@ -1,4 +1,5 @@
 import { useContext } from "react";
+import { Link } from "react-router-dom";
 import LogementsContext from "../../context/logements-context";
 import Bannier from "../bannier/bannier";
 import './home.css';
@@ -9,16 +10,18 @@ const Home = () => {
       <>
       <div className="body">
         <Bannier />
-        <div className="card">
+        <section className="card">
           {logements.map(logement => 
             (
-              <div key={logement.id} className="logements">
+              <article key={logement.id} className="logements">
+                <Link to= {"/logement/" + logement.id}>
                   <img src={logement.cover} alt={logement.description} className="img" />
                   <p className="titre">{logement.title}</p>
-              </div>
+                </Link>                  
+              </article>
             )
           )}
-        </div>
+        </section>
       </div>
         
       </>

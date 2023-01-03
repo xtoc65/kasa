@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500&display=swap');
+
 .header
 {
     display: flex;
@@ -15,7 +17,7 @@
 
 .navbar
 {
-    width: 185px;
+    width: 250px;
     display: flex;
     justify-content: space-between;
 }
@@ -33,4 +35,55 @@
 .navbar_link:hover
 {
     text-decoration: underline;
+}
+
+@media (max-width: 1024px)
+{
+    .navbar 
+    {
+      margin: 0 10px 0 0;
+    }
+}
+
+
+@media (max-width:950px)
+{
+    .App-logo
+    {
+        width: 100px;
+    }
+
+    .navbar
+    {
+        width: 170px;
+    }
+    .navbar_link
+    {
+        font-size: 20px;
+    }
+}
+
+@media (max-width:380px)
+{
+    .navbar
+    {
+        width: 155px;
+    }
+    .navbar_link
+    {
+        font-size: 18px;
+    }
+}
+
+@media (max-width:320px)
+{
+    .navbar
+    {
+       margin: 0;
+       width: 140px;
+    }
+    .navbar_link
+    {
+        font-size: 16px;
+    }
 }

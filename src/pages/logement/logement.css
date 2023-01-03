@@ -1,0 +1,226 @@
+.host_title
+{
+    color: #FF6060;
+    font-family: 'Montserrat';
+    display: flex;    
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.host_title h1
+{
+    font-weight: 500;
+    display: flex;
+    align-items: flex-end;
+    margin: 5px 0;
+}
+
+.host
+{
+    display: flex;
+    align-items: flex-end;
+
+}
+
+.host_name
+{
+    margin: 20px 15px;
+}
+.hote{
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.loca
+{
+    color: #FF6060;
+    margin:0 0 5px 0;
+}
+
+.tags
+{
+    margin:15px 0;
+    display: flex;
+}
+
+.tags_loge
+{
+    
+    background: #FF6060;
+    border-radius: 10px;
+    color: #FFFFFF;
+    padding: 5px;
+    width: 100px;
+    margin: 0 5px ;
+    text-align: center;
+}
+
+.information
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    padding-top: 20px;
+}
+
+.info
+{
+    background: #FF6060;
+    color: #FFFFFF;
+    border-radius: 10px;
+    width: 582px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
+    
+}
+
+.description
+{
+    font-family: 'Montserrat';
+    color: #FF6060;
+    background: #F7F7F7;
+    border-radius: 10px;
+    height: 249px;
+    width: 572px;
+    margin: 10px 0 0 0;
+    padding: 10px 0 0 10px;
+}
+
+.description_equipement
+{
+    font-family: 'Montserrat';
+    color: #FF6060;
+    background: #F7F7F7;
+    border-radius: 10px;
+    height: 249px;
+    width: min-content;
+    width: 572px;
+    margin: 10px 0 0 0;
+    padding: 10px 0 0 10px;
+}
+
+
+@media (max-width:1024px)
+{
+    .information
+    {
+        flex-direction: column;        
+    }
+}
+
+@media (max-width:430px)
+{
+    .host_title
+    {
+        display: block;
+    }
+
+    .host
+    {
+        position: absolute;
+        top: 460px;
+        left: 220px;
+    }
+
+    .host_name
+    {
+        margin: 25px 10px 15px 30px;
+    }
+
+    .hote
+    {
+        width: 50px;
+        height: auto;
+    }
+
+    .information
+    {
+        padding-top: 50px;
+    }
+
+    .info
+    {
+        width: 400px;
+    }
+
+    .description
+    {
+        width: 400px;
+        height: 150px;
+    }
+
+    .description_equipement
+    {
+        width: 400px;
+        height: 150px;
+    }
+}
+
+@media (max-width:380px)
+{
+    .host
+    {
+        top: 400px;
+        left: 218px;
+    }
+
+    .host_name
+    {
+        text-align: end;
+    }
+
+    .hote
+    {
+        width: 50px;
+        height: auto;
+    }
+
+    .information
+    {
+        padding-top: 50px;
+    }
+
+    .info
+    {
+        width: 355px;
+    }
+
+    .description
+    {
+        width: 346px;
+    }
+
+    .description_equipement
+    {
+        width: 346px;
+    }
+}
+
+@media (max-width:320px)
+{
+    .host
+    {
+        top: 425px;
+        left: 200px;
+    }
+
+    .info
+    {
+        width: 310px;
+    }
+
+    .description
+    {
+        width: 300px;
+    }
+
+    .description_equipement
+    {
+        width: 300px;
+    }
+}

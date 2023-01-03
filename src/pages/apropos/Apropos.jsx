@@ -1,12 +1,11 @@
 import apropos from "../../images/apropos.png";
-import Collapse from "../../composants/collapse";
+import Collapse from "../../composants/collapse/collapse";
 import './apropos.css';
 
 const Apropos = () => {
     return (
       <>
         <img src={apropos} alt="images" className="imgpropos"/>
-        <div className="accordeon">
           <div className="label">
           <Collapse label="Fiabilité" >
               <p className="drop">Les annonces postées sur Kasa garantissent une fiabilité totale. 
@@ -40,7 +39,6 @@ const Apropos = () => {
                 que les standards sont bien respectés. Nous organisons également des 
                 ateliers sur la sécurité domestique pour nos hôtes.</p>
           </Collapse>
-        </div>
         </div> 
         
 

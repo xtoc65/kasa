@@ -1,17 +1,20 @@
-.accordeon
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500&display=swap');
+
+.imgpropos
 {
-    padding: 30px 0 0 0;
+    padding-bottom: 35px;
 }
+
 .label
 {
     background: #FF6060;
     color: #FFFFFF;
     border-radius: 5px;
-    width: 700px;
-    height: 30px;
+    width: 550px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 25px;
+    
 
 }
 
@@ -19,5 +22,44 @@
 {
     color: #FF6060;
     background: white;
+}
 
+@media (min-width:1024px)
+{
+    .imgpropos
+    {
+        width: 100%;
+    }
+}
+
+@media (max-width:950px)
+{
+    .imgpropos
+    {
+        width: 100%;
+    }
+}
+
+@media (max-width:430px)
+{
+    .label
+    {
+        width: 375px;
+    }
+}
+
+@media (max-width:380px)
+{
+    .label
+    {
+        width: 330px;
+    }
+}
+
+@media (max-width:320px)
+{
+    .label
+    {
+        width: 280px;
+    }
 }

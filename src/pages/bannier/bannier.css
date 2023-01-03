@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500&display=swap');
+
 .image
 {
     border-radius: 30px;
@@ -29,4 +31,75 @@
     font-weight: 500;
     font-size: 48px;
     line-height: 68px;
+}
+
+@media (max-width:1034px)
+{
+    .image 
+    {
+        width: -webkit-fill-available;
+    }
+    
+    .background
+    {
+        width: -webkit-fill-available;
+        height: 180px;
+    }
+    .img_background
+    {
+        width: -webkit-fill-available;        
+        border-radius: 30px;
+    }
+}
+
+@media (max-width:950px)
+{
+    .image 
+    {
+        width: 95%;
+    }
+    
+    .background
+    {
+        width: 95%;
+        height: 132px;
+    }
+    .img_background
+    {
+        width: 95%;        
+        border-radius: 30px;
+    }
+
+    .banniere
+    {
+        flex-wrap: wrap;
+        align-items: flex-end;
+        top: 30px;
+    }
+}
+
+@media (max-width:430px)
+{
+    .image 
+    {
+        width: 95%;
+        height: 100px;
+    }
+    
+    .background
+    {
+        width: 95%;
+        height: 100px;
+    }
+    .img_background
+    {
+        width: 95%;        
+        border-radius: 30px;
+    }
+
+    .banniere
+    {
+        top: 20px;
+        font-size: 20px;
+    }
 }
