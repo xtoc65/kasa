@@ -1,47 +1,28 @@
-.host_title
+.content
 {
-    color: #FF6060;
-    font-family: 'Montserrat';
-    display: flex;    
-    align-items: flex-end;
+    display: flex;
     justify-content: space-between;
 }
 
-.host_title h1
+.block-left h1
 {
+    font-family: 'Montserrat';
+    color: #FF6060;
     font-weight: 500;
-    display: flex;
-    align-items: flex-end;
-    margin: 5px 0;
-}
-
-.host
-{
-    display: flex;
-    align-items: flex-end;
-
-}
-
-.host_name
-{
-    margin: 20px 15px;
-}
-.hote{
-    width: 64px;
-    height: 64px;
-    border-radius: 50%;
-    object-fit: cover;
+    font-size: 36px;
+    margin: 0 0 20px 0;
 }
 
 .loca
 {
     color: #FF6060;
     margin:0 0 5px 0;
+    font-size: 18px;
 }
 
 .tags
 {
-    margin:15px 0;
+    margin:15px 0 15px -7px;
     display: flex;
 }
 
@@ -55,17 +36,57 @@
     width: 100px;
     margin: 0 5px ;
     text-align: center;
+    font-size: 15px;
+}
+
+.block-right
+{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+}
+
+.host
+{
+    display: flex;
+    align-items: flex-end;    
+}
+
+.host_name
+{
+    font-family: 'Montserrat';
+    color: #FF6060;
+    margin: 20px 15px;
+    text-align: -webkit-right;    
+    font-size: 18px;
+}
+
+.hote{
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.etoile
+{
+    font-size: 20px;
+    margin: 23px 0 23px 65px;
+
 }
 
 .rouge
 {
     color: #FF6060;
+    width: 30px;
+    height: 30px;
 }
 
 .gris
 {
     color: #E3E3E3;
-    ;
+    width: 30px;
+    height: 30px;
 }
 
 .information
@@ -84,10 +105,8 @@
     color: #FFFFFF;
     border-radius: 10px;
     width: 582px;
-    margin-left: auto;
-    margin-right: auto;
     margin-bottom: 25px;
-    border-radius: 16px;
+    border-radius: 5px;
 }
 
 .description
@@ -129,20 +148,38 @@
     {
         flex-direction: column;        
     }
+
+    .rouge
+    {
+        width: 29px;
+    }
+}
+
+@media (max-width:800px)
+{
+    .rouge
+    {
+        width: 26px;
+    }
+
+    .gris
+    {
+        width: 26px;
+    }
 }
 
 @media (max-width:430px)
 {
-    .host_title
+    .content
     {
-        display: block;
+        flex-direction: column;
     }
+    
+    .block-right
 
-    .host
     {
-        position: absolute;
-        top: 460px;
-        left: 220px;
+        flex-direction: row;
+        justify-content: space-between;
     }
 
     .host_name
@@ -156,9 +193,11 @@
         height: auto;
     }
 
-    .information
+    .etoile
     {
-        padding-top: 50px;
+        display: flex;
+        align-items: center;
+        margin: 0;
     }
 
     .info
@@ -174,33 +213,16 @@
 
     .description_equipement
     {
-        width: 400px;
-        height: 150px;
+        width: 200px;
     }
 }
 
 @media (max-width:380px)
 {
-    .host
-    {
-        top: 400px;
-        left: 218px;
-    }
 
     .host_name
     {
         text-align: end;
-    }
-
-    .hote
-    {
-        width: 50px;
-        height: auto;
-    }
-
-    .information
-    {
-        padding-top: 50px;
     }
 
     .info
@@ -221,10 +243,19 @@
 
 @media (max-width:320px)
 {
+    .block-left h1
+    {
+        font-size: 25px;
+    }
+
+    .tags_loge
+    {
+        font-size: 13px;
+    }
+
     .host
     {
-        top: 425px;
-        left: 200px;
+        align-items: center;
     }
 
     .info

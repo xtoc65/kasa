@@ -3,6 +3,9 @@
 .imgpropos
 {
     padding-bottom: 35px;
+    border: 10px;
+    object-fit: cover;
+    width: 100%;
 }
 
 .label
@@ -10,12 +13,11 @@
     background: #FF6060;
     color: #FFFFFF;
     border-radius: 5px;
-    width: 550px;
+    width: 80%;
+    height: 33px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 25px;
-    
-
 }
 
 .drop
@@ -24,42 +26,10 @@
     background: white;
 }
 
-@media (min-width:1024px)
-{
-    .imgpropos
-    {
-        width: 100%;
-    }
-}
-
-@media (max-width:950px)
-{
-    .imgpropos
-    {
-        width: 100%;
-    }
-}
-
 @media (max-width:430px)
 {
     .label
     {
-        width: 375px;
-    }
-}
-
-@media (max-width:380px)
-{
-    .label
-    {
-        width: 330px;
-    }
-}
-
-@media (max-width:320px)
-{
-    .label
-    {
-        width: 280px;
+        width: 100%;
     }
 }

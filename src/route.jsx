@@ -7,7 +7,6 @@ import Home from "./pages/home/Home";
 import Error from "./pages/error/error";
 import Logement from "./pages/logement/logemement"
    
-  // Instead of this:
   const router = createBrowserRouter([
     {
       path: "/",
@@ -15,12 +14,12 @@ import Logement from "./pages/logement/logemement"
       errorElement: <Error />,
       children: [
         {
-            path: "/apropos",
-            element: <Apropos />
+          path: "",
+          element: <Home />
         },
         {
-            path: "/home",
-            element: <Home />
+            path: "/apropos",
+            element: <Apropos />
         },
         {
           path: "/logement/:id",

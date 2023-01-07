@@ -2,9 +2,15 @@
 
 .accordeon
 {
-    padding: 3px;
+    padding: 5px;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
     margin-right: 5px;
+}
+
+.faAngle svg
+{
+    width: 15px;
+    height: 25px;
 }

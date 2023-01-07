@@ -5,21 +5,5 @@
     max-width:1240px;
     width: 100%;
     margin: 0 auto; /*top et bottom : 0 left et right : 0*/
-    padding : 0 15px;
-}
-
-@media (max-width: 1024px)
-{
-    .container 
-    {
-      width: 95%;
-    }
-}
-
-@media (max-width:320px)
-{
-    .container
-    {
-      padding: 0 15px 0 40px;
-    }
+    padding : 0 30px;
 }

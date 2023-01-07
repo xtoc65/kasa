@@ -9,7 +9,7 @@ const nav = () => {
     <div className="header">
       <img src={logo} className="App-logo" alt="logo kasa"/>
       <nav className="navbar">
-          <Link to="/home" className="navbar_link">Home</Link>
+          <Link to="" className="navbar_link">Home</Link>
           <Link to="/apropos" className="navbar_link">A propos</Link>
       </nav>
     </div>      
