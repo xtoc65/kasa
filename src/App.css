@@ -7,3 +7,11 @@
     margin: 0 auto; /*top et bottom : 0 left et right : 0*/
     padding : 0 30px;
 }
+
+@media (max-width:325px)
+{
+    .container
+    {
+        padding: 0 50px;
+    }
+}

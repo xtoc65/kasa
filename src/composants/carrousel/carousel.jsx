@@ -8,10 +8,14 @@ const Carrousel = (props) => {
     return (
       <>
         <div>
-          <div className='fleche' onClick={() =>setPosition(position - 1 > 0 ? position - 1 : pictures.length-1)} ><FaChevronLeft/></div>
+          {(pictures.length > 1)?( 
+            <div className='fleche' onClick={() =>setPosition(position - 1 > 0 ? position - 1 : pictures.length-1)}><FaChevronLeft/></div>
+          ):null}
           <img src={pictures[position]} alt="information" className='img_carrousel'/>
           <div className='chiffre'>{position +1} / {pictures.length}</div>
-          <div className='fleche_droite' onClick={() =>setPosition(position + 1 < pictures.length ? position + 1 : 0)}><FaChevronRight/></div>  
+          {(pictures.length > 1)? (
+            <div className='fleche_droite' onClick={() =>setPosition(position + 1 < pictures.length ? position + 1 : 0)}><FaChevronRight/></div>  
+          ):null}
         </div>
       </>    
 

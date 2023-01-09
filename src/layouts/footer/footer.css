@@ -24,12 +24,20 @@
    color: #FFFFFF;
 }
 
+@media (max-width:1024px)
+{
+    .footer
+    {
+        width: 1084px;
+    }
+}
  
 @media (max-width:950px)
 {   
     .footer
     {
         top: 50px;
+        width: 828px;
     }
 }
 
@@ -37,7 +45,7 @@
 {
     .footer
     {
-        width: 434px;
+        width: 485px;
     }
 }
 
@@ -45,6 +53,6 @@
 {
     .footer
     {
-        width: 386px;
+        width: 435px;
     }
 } 

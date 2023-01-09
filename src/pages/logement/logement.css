@@ -114,7 +114,7 @@
     font-family: 'Montserrat';
     color: #FF6060;
     background: #F7F7F7;
-    border-radius: 10px;
+    border-radius: 4px;
     height: 249px;
     width: 572px;
     margin: 10px 0 0 0;
@@ -127,7 +127,7 @@
     margin: 10px 0 0 0;
     flex-direction: column;   
     background: #F7F7F7;
-    border-radius: 15px;    
+    border-radius: 4px;    
     padding: 10px 0 0 10px;
     height: 249px;
 }
@@ -146,7 +146,8 @@
 {
     .information
     {
-        flex-direction: column;        
+        flex-direction: column;
+        align-items: center;
     }
 
     .rouge
